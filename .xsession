@@ -1,0 +1,1 @@
+/home/nelson/.config/x11/xinitrc
