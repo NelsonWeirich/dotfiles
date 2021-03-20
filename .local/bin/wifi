@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sudo wpa_supplicant -Dnl80211 -iwlp2s0 -c$HOME/.config/wpa-supplicant/wpa.conf &
+sudo dhclient wlp2s0
