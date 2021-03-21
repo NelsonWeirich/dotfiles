@@ -1,0 +1,30 @@
+[settings]
+opentool = zathura
+file-browser = lf
+add-confirm = True
+add-edit = True
+add-folder-name = {doc[author]}
+match-format = {doc[tags]}{doc.subfolder}{doc[title]}{doc[author]}{doc[year]}
+ref-format = {doc[author]}{doc[year]}
+multiple-authors-format = {au[surname]} -- {au[given_name]}
+sort-field = year
+default-library = papers
+
+[tui]
+editmode = vim
+options_list.selected_margin_style = bg:ansigreen fg:ansired
+options_list.unselected_margin_style =
+move_up_key = k
+move_down_key = j
+
+[papers]
+dir = ~/Articles
+add-file-name = {doc[author]}{doc[year]}
+
+[books]
+dir = ~/Books
+add-file-name = {doc[title]}{doc[year]}
+
+[videos]
+dir = ~/Videos
+opentool = mpv
